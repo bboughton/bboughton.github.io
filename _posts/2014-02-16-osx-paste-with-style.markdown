@@ -7,7 +7,7 @@ Don't you hate it when you copy some text from the Internet and paste it into an
 email and it looks just as it did on the web page, messing up your email?
 
 _The background color, bolded text, hyperlink, and font are all pasted into your
-email_
+email._
 ![Paste without match][nomatch]
 
 The common solution to this problem is to open up an application that doesn't
