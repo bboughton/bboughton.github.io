@@ -18,4 +18,4 @@ daily work;
  *  __ctrl + p__ move up the history stack
  *  __ctrl + n__ move down the history stack
  *  __ctrl + r__ allow searching of the command history
- *  __ctrl + l__ clear the screan
+ *  __ctrl + l__ clear the screen
