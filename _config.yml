@@ -2,7 +2,7 @@ name: Brian Boughton
 markdown: redcarpet
 pygments: true
 permalink: /posts/:title
-exclude: ['Rakefile']
+exclude: ['Rakefile', 'README.md']
 
 url: http://brianboughton.com
 description: A fantastic blog that is fantastic.
