@@ -1,0 +1,101 @@
+/* Command Palette Styles */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.cmd-palette-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: color-mix(in srgb, var(--bg-primary) 80%, transparent);
+  backdrop-filter: blur(4px);
+  z-index: var(--z-modal);
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20vh;
+}
+
+.cmd-palette {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.cmd-palette-input {
+  width: 100%;
+  padding: var(--space-4) var(--space-5);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--fg-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  outline: none;
+}
+
+.cmd-palette-input::placeholder {
+  color: var(--fg-muted);
+}
+
+.cmd-palette-results {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: var(--space-2) 0;
+}
+
+.cmd-palette-item {
+  padding: var(--space-3) var(--space-5);
+  cursor: pointer;
+  color: var(--fg-secondary);
+  transition: all var(--transition-fast);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+}
+
+.cmd-palette-item:hover,
+.cmd-palette-item.selected {
+  background-color: var(--bg-tertiary);
+  color: var(--color-primary);
+}
+
+.cmd-palette-no-results {
+  padding: var(--space-6) var(--space-5);
+  text-align: center;
+  color: var(--fg-muted);
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);
+}
+
+/* Scrollbar styling for command palette */
+.cmd-palette-results::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cmd-palette-results::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+.cmd-palette-results::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.cmd-palette-results::-webkit-scrollbar-thumb:hover {
+  background: var(--border-color);
+}

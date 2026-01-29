@@ -1,0 +1,107 @@
+/* Design System Variables */
+
+:root {
+  /* === COLORS === */
+
+  /* Backgrounds */
+  --bg-primary: #12141d;
+  --bg-secondary: #1c1f2a;
+  --bg-tertiary: #2a2e3d;
+
+  /* Foregrounds */
+  --fg-primary: #f0e7d8;
+  --fg-secondary: #d4c5b9;
+  --fg-tertiary: #b8a99c;
+  --fg-muted: #6b5d7a;
+
+  /* Interactive/Brand Colors */
+  --color-primary: #82aaff;
+  --color-accent: #ff2a6d;
+  --color-focus: #ff2a6d;
+
+  /* Semantic States */
+  --color-success: #05ffa1;
+  --color-warning: #ffcc00;
+  --color-error: #ff2a6d;
+  --color-info: #00d9ff;
+
+  /* Borders & Selection */
+  --border-color: #2d3561;
+  --selection-bg: #ff2a6d55;
+
+  /* === TYPOGRAPHY === */
+  --font-serif: Georgia, "Bitstream Charter", "Times New Roman", serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Berkeley Mono', Consolas, Monaco, monospace;
+
+  /* Font Sizes */
+  --text-xs: 0.875rem;   /* 14px */
+  --text-sm: 1rem;       /* 16px */
+  --text-base: 1.125rem; /* 18px */
+  --text-lg: 1.25rem;    /* 20px */
+  --text-xl: 1.5rem;     /* 24px */
+  --text-2xl: 1.75rem;   /* 28px */
+  --text-3xl: 2.125rem;  /* 34px */
+  --text-4xl: 2.5rem;    /* 40px */
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* === SPACING === */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-8: 3rem;      /* 48px */
+  --space-10: 4rem;     /* 64px */
+  --space-12: 6rem;     /* 96px */
+
+  /* === LAYOUT === */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+
+  --content-width: 65ch;
+
+  /* === BORDERS & RADIUS === */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  --border-width: 2px;
+
+  /* === SHADOWS === */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+
+  /* === TRANSITIONS === */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+
+  /* === Z-INDEX === */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-popover: 1050;
+  --z-tooltip: 1060;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--fg-primary);
+}
